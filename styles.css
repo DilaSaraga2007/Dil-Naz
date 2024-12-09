@@ -1,0 +1,239 @@
+/* Общие стили для всего сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Чёрный фон */
+    color: #ffffff; /* Белый текст по умолчанию */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+}
+
+header .logo {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive; /* Шрифт для логотипа */
+    text-align: center;
+    color: #ffcc00; /* Жёлтый цвет для логотипа */
+    margin: 20px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Стили для геро-блока */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero .text {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Жёлтый цвет для основного заголовка */
+}
+
+.hero h1 .highlight {
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff; /* Белый текст для абзацев */
+    margin-bottom: 20px;
+}
+
+.hero .book-btn {
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero .book-btn:hover {
+    background-color: #ffd633;
+}
+
+.hero .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для текста */
+h1, h2 {
+    font-family: 'Georgia', serif; /* Шрифт для заголовков */
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Жёлтый цвет для заголовков */
+}
+
+h2 {
+    font-size: 28px;
+    color: #ffcc00;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #ffffff; /* Белый цвет для абзацев */
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 20px;
+    color: #ffcc00; /* Жёлтый цвет для цитат */
+    text-align: center;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+/* Изображения владельцев */
+.photo-Dildora, .photo-Nazi {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для форм */
+.booking-form {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.booking-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking-form textarea {
+    resize: vertical;
+}
+
+.booking-form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #218838;
+}
+
+.book-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Дополнительные стили для выравнивания текста */
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Стили для страницы "Наши услуги" */
+#services-page .services {
+    padding: 40px;
+    background-color: #222;
+}
+
+#services-page .services h1 {
+    color: #ffcc00;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#services-page .service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#services-page .service-item {
+    text-align: center;
+    color: #ffffff;
+}
+
+#services-page .service-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#services-page blockquote {
+    font-size: 24px;
+    color: #ffcc00;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+}

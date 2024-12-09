@@ -1,0 +1,144 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+}
+
+header {
+    background-color: #333; /* Темно-серый фон */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: #ffcc00; /* Жёлтый цвет */
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a.active {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Стилизация раздела "Контакты" */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ffcc00; /* Жёлтый цвет заголовков */
+    margin-bottom: 20px;
+}
+
+.contacts p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.contacts a {
+    color: #ffcc00; /* Жёлтые ссылки */
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    color: #ffcc00;
+    margin: 30px 0;
+}
+
+/* Кнопка для открытия формы */
+.book-btn {
+    background-color: #ffcc00; /* Жёлтый цвет */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    background-color: #e6b800; /* Темнее жёлтый при наведении */
+}
+
+/* Форма записи */
+.booking-form {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.booking-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #555;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.booking-form button:hover {
+    background-color: #e6b800;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    header nav {
+        display: block;
+        margin-top: 10px;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+}

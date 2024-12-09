@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - ДильНаз</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ДильНаз</div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Наши услуги</a>
+            <a href="portfolio.html">Наши работы</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contacts">
+            <h1>Контакты</h1>
+            <p>Телефон: <a href="tel:+77079942007">87079942007</a></p>
+            <p>Email: <a href="mailto:d.yunusova007@gmail.com">d.yunusova007@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/77079942007" target="_blank">Написать в WhatsApp</a></p>
+            <blockquote>
+                "Свяжитесь с нами, чтобы создать ваше незабываемое мероприятие."
+            </blockquote>
+            <button class="book-btn" onclick="toggleForm()">Записаться на мероприятие</button>
+            
+            
+            <div id="booking-form" class="booking-form" style="display: none;">
+                <h2>Записаться на мероприятие</h2>
+                <form action="#" method="POST">
+                    <label for="event-name">Тип мероприятия:</label>
+                    <select id="event-name" name="event-name" required>
+                        <option value="birthday">День рождения</option>
+                        <option value="wedding">Свадьба</option>
+                        <option value="conference">Конференция</option>
+                        <option value="other">Другое</option>
+                    </select>
+
+                    <label for="event-date">Дата мероприятия:</label>
+                    <input type="date" id="event-date" name="event-date" required>
+
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="how-to-get">Как пройти:</label>
+                    <textarea id="how-to-get" name="how-to-get" placeholder="Напишите указания по пути, если необходимо" rows="3"></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
