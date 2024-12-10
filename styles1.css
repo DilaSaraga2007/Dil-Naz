@@ -101,3 +101,23 @@ h1 {
         align-items: center;
     }
 }
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .text {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .hero .image img {
+        max-width: 80%;
+    }
+}
